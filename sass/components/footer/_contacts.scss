@@ -1,9 +1,9 @@
 .footer-list{
     list-style: none;
-}
-
-.footer-list .footer-item:not(:last-child) {
-    margin-bottom: 9px;
+    
+    .footer-item:not(:last-child) {
+        margin-bottom: 9px;
+    }
 }
 
 .footer-address-link {

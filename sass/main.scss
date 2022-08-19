@@ -1,8 +1,9 @@
 @import './utils/variables';
 @import './base/normalize';
+@import './base/common';
 @import './base/reset';
-@import './utils/container';
 @import './utils/hidden';
+@import './utils/placeholders';
 
 @import './components/header/header';
 @import './components/header/header-logo';
