@@ -2,7 +2,7 @@ textarea {
     resize: none;
 }
 
-.form-field {
+.form__field {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
@@ -17,7 +17,7 @@ textarea {
         }
 }
 
-.modal-form-title {
+.form__title {
     height: 23px;
     font-weight: 700;
     font-size: 20px;
@@ -46,11 +46,7 @@ textarea {
     }
 }
 
-.modal-input:focus+.modal-form-icon {
-    fill: $accent-color;
-}
-
-.modal-form-icon {
+.input-wrap__icon {
     position: absolute;
     left: 12px;
     top: 50%;
@@ -60,9 +56,13 @@ textarea {
     &:focus {
         fill: $accent-color;
     }
+
+    .input-wrap__input:focus+ & {
+        fill: $accent-color;
+    }
 }
 
-.form-field textarea {
+.form__field textarea {
     padding: 12px 16px;
     cursor: pointer;
 
@@ -75,7 +75,7 @@ textarea {
     }
 }
 
-.modal-textarea {
+.comment__textarea {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     width: 100%;
@@ -92,7 +92,7 @@ textarea {
     margin-bottom: 20px;
 }
 
-.check-text {
+.policy__text {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,7 +100,7 @@ textarea {
     cursor: pointer;
 }
 
-.check-text span {
+.policy__text span {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -110,26 +110,26 @@ textarea {
     border: 2px solid $title-color;
     border-radius: 2px;
 
-    .input-check:checked+ & {
+    .policy__check:checked+ & {
         background-color: $accent-color;
         border: none;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .input-check:focus+ & {
+    .policy__check:focus+ & {
         border-color: $accent-color;
     }
 }
 
-.check-icon {
+.policy__icon {
     fill: transparent;
 
-    .input-check:checked+.check-text & {
+    .policy__check:checked+.policy__text & {
         fill: $secondary-color;
     }
 }
 
-.modal-policy {
+.policy {
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
@@ -144,11 +144,11 @@ textarea {
         }
 }
 
-.check-link {
+.policy__link {
     color: $accent-color;
 }
 
-.btn-form {
+.form__btn {
     display: block;
     margin-left: auto;
     margin-right: auto;
