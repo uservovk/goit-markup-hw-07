@@ -303,41 +303,6 @@ ul {
   margin: -1px;
 }
 
-.footer-form-title, .footer-soc-title, .activity-text-cover, .advantage-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
-.footer-form-btn, .footer-soc-link, .clients-link, .worker-soc-link, .activity-cover, .advantages-icon, .check-text span, .modal-close-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.footer-form-btn, .btn-form, .hero-btn {
-  height: 50px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  color: #FFFFFF;
-  background: #2196F3;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border-color: transparent;
-  cursor: pointer;
-}
-
 .header {
   border-bottom: 1px solid #ECECEC;
 }
@@ -375,14 +340,14 @@ ul {
 .header-nav-link {
   display: block;
   padding: 32px 0;
-  text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  text-decoration: none;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #212121;
 }
 .header-nav-link:hover, .header-nav-link:focus {
   color: #2196F3;
@@ -435,10 +400,10 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  text-decoration: none;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  text-decoration: none;
+  color: #757575;
 }
 .header-mail:hover, .header-mail:focus {
   color: #2196F3;
@@ -461,10 +426,10 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  text-decoration: none;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  text-decoration: none;
+  color: #757575;
 }
 .header-phone:hover, .header-phone:focus {
   color: #2196F3;
@@ -505,8 +470,18 @@ ul {
 }
 
 .hero-btn {
-  width: 216px;
-  border: none;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  background: #2196F3;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: transparent;
+  cursor: pointer;
   font-family: inherit;
   padding: 10px 31px;
 }
@@ -549,6 +524,15 @@ ul {
 }
 
 .modal-close-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
   top: 8px;
   right: 8px;
@@ -704,10 +688,23 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
 
 .check-text span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-right: 8px;
   width: 16px;
   height: 15px;
@@ -754,13 +751,34 @@ textarea {
 }
 
 .btn-form {
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  display: block;
   width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  background: #2196F3;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: transparent;
+  cursor: pointer;
 }
 
 .advantages-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 30px;
   border-radius: 4px;
   width: 270px;
@@ -790,6 +808,11 @@ textarea {
 
 .advantage-title {
   margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: #212121;
 }
 
@@ -837,6 +860,15 @@ textarea {
 }
 
 .activity-cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
   bottom: 0;
   background: rgba(47, 48, 58, 0.8);
@@ -846,6 +878,11 @@ textarea {
 
 .activity-text-cover {
   height: 16px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: #FFFFFF;
 }
 
@@ -915,6 +952,15 @@ textarea {
 }
 
 .worker-soc-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -976,6 +1022,15 @@ textarea {
 }
 
 .clients-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 170px;
   height: 92px;
   border: 1px solid #AFB1B8;
@@ -1078,10 +1133,24 @@ textarea {
 
 .footer-soc-title {
   margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: #FFFFFF;
 }
 
 .footer-soc-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
   width: 44px;
@@ -1112,6 +1181,11 @@ textarea {
 }
 
 .footer-form-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   height: 16px;
   margin-bottom: 20px;
   color: #FFFFFF;
@@ -1192,6 +1266,27 @@ textarea {
 }
 
 .footer-form-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  background: #2196F3;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: transparent;
+  cursor: pointer;
   width: 200px;
 }
 

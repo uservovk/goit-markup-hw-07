@@ -21,7 +21,9 @@
 }
 
 .clients-link {
-    @extend %flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 170px;
     height: 92px;
     border: 1px solid $fill-color;

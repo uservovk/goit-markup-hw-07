@@ -26,7 +26,9 @@
 }
 
 .modal-close-btn {
-    @extend %flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: 8px;
     right: 8px;
