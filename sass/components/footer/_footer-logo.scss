@@ -1,4 +1,4 @@
-.footer-logo {
+.logo__link {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -8,8 +8,10 @@
     color: $accent-color;
     text-decoration: none;
 }
-
-.footer-logo-studio {
-    margin-bottom: 20px;
+.logo__span {
     color: $secondary-color;
+}
+
+.left-block__logo {
+    margin-bottom: 20px;
 }

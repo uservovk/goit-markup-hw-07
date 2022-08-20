@@ -4,7 +4,7 @@
     background-color: $bg-color;
 }
 
-.team-title {
+.team__title {
     margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
@@ -14,29 +14,29 @@
     color: $title-color;
 }
 
-.team-list {
+.team__list {
     display: flex;
     list-style: none;
 }
 
-.team-item {
+.team__item {
     width: 270px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color: $secondary-color;
 
-    .team-list .team-item+ & {
+    .team__list .team__item+ & {
         margin-left: 30px;
     }
 }
 
-.team-photo {
+.team__photo {
     display: block;
     max-width: 100%;
     height: auto;
 }
 
-.worker-name {
+.worker__name {
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
@@ -46,7 +46,7 @@
     color: $title-color;
 }
 
-.worker-position {
+.worker__position {
     margin-bottom: 16px;
     font-weight: 400;
     font-size: 16px;
@@ -56,7 +56,7 @@
     color: $text-color;
 }
 
-.worker-content {
+.worker {
     padding-top: 30px;
     padding-bottom: 30px;
 }

@@ -3,20 +3,20 @@
     padding-bottom: 94px;
 }
 
-.advantage-list {
+.advantages__list {
     display: flex;
     list-style: none;
 }
 
-.advantage-list .advantage-item+.advantage-item {
+.advantages__list .advantages__item+.advantages__item {
     margin-left: 30px;
 }
 
-.advantage-item {
+.advantages__item {
     width: 270px;
 }
 
-.advantage-title {
+.advantages__title {
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
@@ -26,7 +26,7 @@
     color: $title-color;
 }
 
-.advantage-text {
+.advantages__text {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;

@@ -1,15 +1,15 @@
-.footer-soc {
+.social {
     margin-left: 70px;
     padding-top: 12px;
 }
 
-.footer-soc-list {
+.social__list {
     display: flex;
     list-style: none;
     column-gap: 10px;
 }
 
-.footer-soc-title {
+.social__title {
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
@@ -19,7 +19,7 @@
     color: $secondary-color;
 }
 
-.footer-soc-link {
+.social__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,6 +34,6 @@
     }
 }
 
-.footer-soc-icon {
+.social__icon {
     fill: $secondary-color;
 }

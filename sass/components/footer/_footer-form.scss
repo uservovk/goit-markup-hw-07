@@ -1,14 +1,14 @@
-.footer-form {
+.subscribe {
     margin-left: auto;
     padding-top: 12px;
 }
 
-.footer-form-field {
+.subscribe__field {
     display: flex;
     align-items: center;
 }
 
-.footer-form-title {
+.subscribe__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -19,7 +19,7 @@
     color: $secondary-color;
 }
 
-.footer-form-field input {
+.subscribe__field input {
     padding-left: 16px;
     margin-right: 12px;
     width: 358px;
@@ -46,7 +46,7 @@
     }
 }
 
-.footer-form-btn {
+.subscribe__btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,7 +64,7 @@
     width: 200px;
 }
 
-.footer-form-icon {
+.subscribe__icon {
     margin-left: 10px;
     fill: $secondary-color;
 }

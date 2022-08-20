@@ -1,4 +1,4 @@
-.activity-cover {
+.cover {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,7 +9,7 @@
     height: 70px;
 }
 
-.activity-text-cover {
+.cover__text {
     height: 16px;
     font-weight: 700;
     font-size: 14px;

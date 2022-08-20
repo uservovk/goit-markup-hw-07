@@ -1,9 +1,9 @@
-.header-nav {
+.navigation {
     display: flex;
     align-items: center;
 }
 
-.header-nav-link {
+.navigation__link {
     display: block;
     padding: 32px 0;
     font-weight: 500;
@@ -35,11 +35,11 @@
     }
 }
 
-.header-nav-list {
+.navigation__list {
     display: flex;
     margin-left: 93px;
     list-style: none;
 }
-.header-nav-list .header-item+.header-item {
+.navigation__list .navigation__item+.navigation__item {
     margin-left: 50px;
 }

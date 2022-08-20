@@ -1,4 +1,4 @@
-.filter-btn {
+.portfolio__btn {
     border-radius: 4px;
     border: transparent;
     padding: 6px 22px;
@@ -20,18 +20,13 @@
     }
 }
 
-.filter-btn-list {
+.portfolio__btn-list {
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
     list-style: none;
 }
 
-.filter-btn-list .filter-btn-item+.filter-btn-item {
+.portfolio__btn-list .portfolio__btn-item+.portfolio__btn-item {
     margin-left: 8px;
-}
-
-.portfolio-example-list {
-    display: flex;
-    flex-wrap: wrap;
 }

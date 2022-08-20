@@ -3,7 +3,7 @@
     padding-top: 94px;
 }
 
-.clients-title {
+.clients__title {
     margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
@@ -13,14 +13,14 @@
     color: $title-color;
 }
 
-.clients-list {
+.clients__list {
     display: flex;
     justify-content: center;
     gap: 30px;
     list-style: none;
 }
 
-.clients-link {
+.clients__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,12 +35,12 @@
     }
 }
 
-.clients-logo {
+.clients__logo {
     fill: $fill-color;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .clients-link:hover &,
-    .clients-link:focus & {
+    .clients__link:hover &,
+    .clients__link:focus & {
         fill: $accent-color;
     }
 }
