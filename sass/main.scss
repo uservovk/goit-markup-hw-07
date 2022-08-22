@@ -1,8 +1,11 @@
 @import './utils/variables';
 @import './base/normalize';
 @import './base/common';
+@import './components/container';
 @import './base/reset';
 @import './utils/hidden';
+@import './utils/placeholders';
+@import './utils/mixin';
 
 @import './components/header/header';
 @import './components/logo';
@@ -13,15 +16,9 @@
 @import './components/studio/hero/modal';
 @import './components/studio/hero/modal-form';
 
-@import './components/studio/advantages/adv-icon';
-@import './components/studio/advantages/advantages';
-
-@import './components/studio/activity/activity';
-@import './components/studio/activity/activity-cover';
-
-@import './components/studio/team/worker';
-@import './components/studio/team/worker-soc';
-
+@import './components/studio/advantages';
+@import './components/studio/activity';
+@import './components/studio/team';
 @import './components/studio/clients';
 
 @import './components/footer/footer';
