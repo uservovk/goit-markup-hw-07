@@ -2,3 +2,15 @@ body {
     font-family: 'Roboto', sans-serif;
     color: $title-color;
 }
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    outline: solid 2px green;
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+}
