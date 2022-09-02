@@ -1,0 +1,100 @@
+.sky {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 191, 255) ;
+}
+
+.sun {
+    animation: spin 50s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.list {
+    list-style: none;
+}
+
+.first-cloud {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: moving-first 200s linear infinite;
+    transition-delay: 20s;
+}
+@keyframes moving-first {
+    0% {left: 100%;}
+    100% {left: 0;}
+}
+
+.second-cloud {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    animation: moving-second 300s linear infinite;
+    transition-delay: 80s;
+}
+
+@keyframes moving-second {
+    0% {left: 100%;}
+    100% {left: 0;}
+}
+
+.third-cloud{
+    position: absolute;
+    right: 0;
+    top: 240px;
+    animation: moving-third 180s linear infinite;
+    transition-delay: 40s;
+}
+
+@keyframes moving-third {
+    0% {left: 100%;}
+    100% {left: 0;}
+}
+
+.fourth-cloud {
+    position: absolute;
+    left: 400px;
+    top: 270px;
+    animation: moving-fourth 220s linear infinite;
+    transition-delay: 60s;
+}
+
+@keyframes moving-fourth {
+    0% {left:100%;}
+    100% {left: 0;}
+}
+
+.fifth-cloud {
+    position: absolute;
+    left: 200px;
+    top: 150px;
+    animation: moving-fifth 160s linear infinite;
+    
+}
+
+@keyframes moving-fifth {
+    0% {left: 100%;}
+    100% {left: 0;}
+}
+
+.sixth-cloud {
+    position: absolute;
+    left: 50%;
+    top: 250px;
+    animation: moving-sixth 320s linear infinite;
+    transition-delay: 100s;
+}
+
+@keyframes moving-sixth {
+    0% {left: 100%;}
+    100% {left: 0;}
+}
