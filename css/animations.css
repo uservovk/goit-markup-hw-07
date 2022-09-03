@@ -482,4 +482,56 @@ summary {
   100% {
     left: 0;
   }
-}/*# sourceMappingURL=anim1.css.map */
+}
+.leisure {
+  outline: solid 1px darkcyan;
+}
+
+.leisure__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  color: darkcyan;
+}
+
+.leisure__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 50px;
+     -moz-column-gap: 50px;
+          column-gap: 50px;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 0;
+}
+
+.leisure__item {
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+.leisure:hover .leisure__item {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+.leisure__item:nth-child(1) {
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+.leisure__item:nth-child(2) {
+  -webkit-transition-duration: 1500ms;
+          transition-duration: 1500ms;
+}
+.leisure__item:nth-child(3) {
+  -webkit-transition-duration: 3000ms;
+          transition-duration: 3000ms;
+}/*# sourceMappingURL=animations.css.map */
