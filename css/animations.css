@@ -557,6 +557,7 @@ summary {
   -webkit-margin-after: 0;
           margin-block-end: 0;
   padding-bottom: 30px;
+  padding-top: 30px;
   padding-left: 50px;
   padding-right: 50px;
 }
@@ -625,4 +626,55 @@ summary {
 .leisure-three:hover .leisure-three__item:nth-child(3) {
   -webkit-transform: translate(-50px, -60px);
           transform: translate(-50px, -60px);
+}
+
+.leisure-fourth {
+  outline: solid 1px green;
+}
+
+.leisure__title {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+}
+
+.leisure-fourth {
+  padding-bottom: 50px;
+}
+
+.leisure-fourth__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 30px;
+  gap: 50px;
+}
+
+.leisure-fourth__item {
+  opacity: 0;
+}
+
+.leisure-fourth:hover .leisure-fourth__item {
+  -webkit-animation: appear 1000ms linear;
+          animation: appear 1000ms linear;
+}
+
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=animations.css.map */
