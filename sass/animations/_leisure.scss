@@ -130,8 +130,10 @@
 }
 
 .leisure-fourth:hover {
-    transition-property: opacity;
-    transition-duration: 1000ms;
-    transition-timing-function: linear;
-    opacity: 1;
+    animation: opacity 1000ms linear forwards;
+}
+
+@keyframes opacity {
+    0% {opacity:0;}
+    100% {opacity: 1;}
 }

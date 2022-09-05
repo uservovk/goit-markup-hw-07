@@ -654,11 +654,24 @@ summary {
 }
 
 .leisure-fourth:hover {
-  -webkit-transition-property: opacity;
-  transition-property: opacity;
-  -webkit-transition-duration: 1000ms;
-          transition-duration: 1000ms;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
-  opacity: 1;
+  -webkit-animation: opacity 1000ms linear forwards;
+          animation: opacity 1000ms linear forwards;
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=animations.css.map */
