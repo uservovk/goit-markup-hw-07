@@ -603,79 +603,26 @@ summary {
   gap: 30px;
 }
 
+.leisure-three__item {
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 2000ms;
+          transition-duration: 2000ms;
+}
+
 .leisure-three:hover .leisure-three__item:nth-child(1) {
-  -webkit-animation: animateX50 2000ms;
-          animation: animateX50 2000ms;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
 }
 
 .leisure-three:hover .leisure-three__item:nth-child(2) {
-  -webkit-animation: animateY50 2000ms;
-          animation: animateY50 2000ms;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
 }
 
 .leisure-three:hover .leisure-three__item:nth-child(3) {
-  -webkit-animation: animateX50Y60 2000ms;
-          animation: animateX50Y60 2000ms;
-}
-
-@-webkit-keyframes animateX50 {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
-  }
-}
-
-@keyframes animateX50 {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
-  }
-}
-@-webkit-keyframes animateY50 {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
-  }
-}
-@keyframes animateY50 {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
-  }
-}
-@-webkit-keyframes animateX50Y60 {
-  0% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-  100% {
-    -webkit-transform: translate(-50px, -60px);
-            transform: translate(-50px, -60px);
-  }
-}
-@keyframes animateX50Y60 {
-  0% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-  100% {
-    -webkit-transform: translate(-50px, -60px);
-            transform: translate(-50px, -60px);
-  }
+  -webkit-transform: translate(-50px, -60px);
+          transform: translate(-50px, -60px);
 }/*# sourceMappingURL=animations.css.map */
