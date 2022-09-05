@@ -50,8 +50,8 @@
     margin-block-start: 0;
     margin-block-end: 0;
     padding-bottom: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .leisures__item {
@@ -80,7 +80,7 @@
 .leisure-three__list {
     display: flex;
     justify-content: center;
-    padding-top: 80px;
+    padding-top: 50px;
     padding-bottom: 80px;
     gap: 30px;
 }
@@ -94,7 +94,7 @@
 }
 
 .leisure-three:hover .leisure-three__item:nth-child(3) {
-    animation: animateX50Y100 2000ms;
+    animation: animateX50Y60 2000ms;
 }
 
 @keyframes animateX50 {
@@ -107,7 +107,7 @@
     100% {transform: translateY(50px)};
 }
 
-@keyframes animateX50Y100 {
+@keyframes animateX50Y60 {
     0% {transform: translate(0)};
-    100% {transform: translate(-50px, -100px)};
+    100% {transform: translate(-50px, -60px)};
 }

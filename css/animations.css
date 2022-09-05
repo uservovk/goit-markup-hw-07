@@ -557,8 +557,8 @@ summary {
   -webkit-margin-after: 0;
           margin-block-end: 0;
   padding-bottom: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .leisures__item {
@@ -598,7 +598,7 @@ summary {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 80px;
+  padding-top: 50px;
   padding-bottom: 80px;
   gap: 30px;
 }
@@ -614,8 +614,8 @@ summary {
 }
 
 .leisure-three:hover .leisure-three__item:nth-child(3) {
-  -webkit-animation: animateX50Y100 2000ms;
-          animation: animateX50Y100 2000ms;
+  -webkit-animation: animateX50Y60 2000ms;
+          animation: animateX50Y60 2000ms;
 }
 
 @-webkit-keyframes animateX50 {
@@ -659,23 +659,23 @@ summary {
             transform: translateY(50px);
   }
 }
-@-webkit-keyframes animateX50Y100 {
+@-webkit-keyframes animateX50Y60 {
   0% {
     -webkit-transform: translate(0);
             transform: translate(0);
   }
   100% {
-    -webkit-transform: translate(-50px, -100px);
-            transform: translate(-50px, -100px);
+    -webkit-transform: translate(-50px, -60px);
+            transform: translate(-50px, -60px);
   }
 }
-@keyframes animateX50Y100 {
+@keyframes animateX50Y60 {
   0% {
     -webkit-transform: translate(0);
             transform: translate(0);
   }
   100% {
-    -webkit-transform: translate(-50px, -100px);
-            transform: translate(-50px, -100px);
+    -webkit-transform: translate(-50px, -60px);
+            transform: translate(-50px, -60px);
   }
 }/*# sourceMappingURL=animations.css.map */
