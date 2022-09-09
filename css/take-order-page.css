@@ -374,18 +374,41 @@ img {
 .order-hero {
   padding: 40px 20px;
 }
+@media screen and (min-width: 480px) {
+  .order-hero {
+    max-width: 480px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 
 .order-hero__title {
+  margin-bottom: 16px;
   text-align: center;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
   color: var(--secondary-color);
 }
-
-.bg-img {
+.order-hero__bg-img {
+  margin-bottom: 16px;
   background-image: url("../images/order-hero-mx1.jpg");
-  background-size: 280px 171px;
+  max-width: 100%;
+  height: 171px;
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .order-hero__bg-img {
+    background-image: url("../images/order-hero-mx2.jpg");
+  }
+}
+
+.order-hero__text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2B2B2B;
 }
 
 .order-hero__text + .order-hero__text {
