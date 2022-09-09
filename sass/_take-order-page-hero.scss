@@ -1,0 +1,21 @@
+.order-hero {
+    padding: 40px 20px;
+}
+
+.order-hero__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--secondary-color);
+}
+
+.bg-img {
+    background-image: url('../images/order-hero-mx1.jpg');
+    background-size: 280px 171px;
+    
+}
+
+.order-hero__text+.order-hero__text {
+    margin-top: 16px;
+}
