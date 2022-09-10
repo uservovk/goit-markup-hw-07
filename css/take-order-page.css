@@ -510,6 +510,24 @@ img {
   }
 }
 
+.order-hero__shape-two {
+  display: none;
+  width: 82px;
+  height: 78px;
+  position: absolute;
+  top: 45px;
+  left: -65px;
+  background-color: var(--bcg-color-one);
+  -webkit-box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+          box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 72px 0px;
+}
+@media screen and (min-width: 1440px) {
+  .order-hero__shape-two {
+    display: block;
+  }
+}
+
 .order-hero__img-one {
   display: none;
   position: absolute;
@@ -574,6 +592,11 @@ img {
 @media screen and (min-width: 1440px) {
   .order-hero__img-three {
     display: block;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .order-hero__img-three {
+    background-image: url("../images/order-03d-x2.jpg");
   }
 }
 

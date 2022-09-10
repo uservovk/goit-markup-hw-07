@@ -108,9 +108,19 @@
 }
 
 .order-hero__shape-two {
+    display: none;
+
+    @include desktop {
+        display: block;
+    }
     width: 82px;
     height: 78px;
-    background-color: aquamarine;
+    position: absolute;
+    top: 45px;
+    left: -65px;
+    background-color: var(--bcg-color-one);
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 72px 0px;
 }
 
 .order-hero__img-one {
@@ -169,7 +179,7 @@
     top: 176px;
     left: 1056px;
     border-radius: 0px 0px 72px 0px;
-    @include relative {
+    @include retina {
         background-image: url('../images/order-03d-x2.jpg');
     }
 }
