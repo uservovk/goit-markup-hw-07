@@ -374,10 +374,13 @@ img {
 .order-hero {
   padding: 40px 20px;
   position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media screen and (min-width: 480px) {
   .order-hero {
-    max-width: 480px;
+    width: 480px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -385,7 +388,7 @@ img {
 @media screen and (min-width: 768px) {
   .order-hero {
     padding: 40px 32px;
-    max-width: 704px;
+    width: 704px;
   }
 }
 
@@ -401,6 +404,7 @@ img {
   .order-hero__title {
     font-size: 36px;
     text-align: start;
+    width: 704px;
   }
 }
 
@@ -408,7 +412,7 @@ img {
   margin-bottom: 16px;
   background-image: url("../images/order-hero-mx1.jpg");
   border-radius: 15px;
-  max-width: 100%;
+  width: 100%;
   height: 171px;
   background-size: cover;
   background-position: center;
@@ -420,6 +424,10 @@ img {
 }
 @media screen and (min-width: 768px) {
   .order-hero__bg-img {
+    margin-right: 32px;
+    margin-bottom: 0;
+    width: 336px;
+    height: 158px;
     background-image: url("../images/order-hero-tx1.jpg");
   }
 }
@@ -442,13 +450,37 @@ img {
   z-index: -1;
 }
 
+@media screen and (min-width: 768px) {
+  .order-hero__wrap {
+    width: 704px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .order-hero__list {
+    width: 336px;
+    height: 116px;
+  }
+}
+
+.order-hero__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .order-hero__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
 .order-hero__text {
   font-weight: 300;
   font-size: 16px;
   line-height: 1.25;
   color: var(--primary-color);
-}
-
-.order-hero__text + .order-hero__text {
-  margin-top: 16px;
 }/*# sourceMappingURL=take-order-page.css.map */
