@@ -103,6 +103,22 @@
     @include desktop {
         width: 1259px;
         align-items: start;
+        position: relative;
+    }
+}
+
+.order-hero__img-one {
+    position: absolute;
+    top: 176px;
+    left: 587px;
+    background-image: url('../images/order-01d-x1.jpg');
+    background-size: 203px;
+    width: 203px;
+    height: 203px;
+    border-radius: 0px 72px 72px 0px;
+    
+    @include retina {
+        background-image: url('../images/order-01d-x2.jpg');
     }
 }
 

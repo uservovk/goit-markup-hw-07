@@ -506,6 +506,23 @@ img {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
+    position: relative;
+  }
+}
+
+.order-hero__img-one {
+  position: absolute;
+  top: 176px;
+  left: 587px;
+  background-image: url("../images/order-01d-x1.jpg");
+  background-size: 203px;
+  width: 203px;
+  height: 203px;
+  border-radius: 0px 72px 72px 0px;
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .order-hero__img-one {
+    background-image: url("../images/order-01d-x2.jpg");
   }
 }
 
