@@ -400,7 +400,4 @@ img {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--secondary-color);
-}
-.take-order-btn__link:focus {
-  font-weight: 705;
 }/*# sourceMappingURL=main-button.css.map */
