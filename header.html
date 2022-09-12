@@ -1,125 +1,106 @@
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>header</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>шапка</title>
+  <link rel="stylesheet" href="./css/header.min.css">
 </head>
 <body>
-    <header class="header">
-  <div class="container">
-    <a href="" class="header__logo"
-      ><picture>
-        <source
-          srcset="./images/logo-d-x1.png 1x, ./images/logo-d-x2.png 2x"
-          media="(min-width: 1440px)"
-        />
-        <source
-          srcset="./images/logo-t-x1.png 1x, ./images/logo-t-x2.png 2x"
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="./images/logo-m-x1.png 1x, ./images/logo-m-x2.png 2x"
-          media="(max-width: 767px)"
-        />
-        <img src="./images/logo-d-x2.png" alt="логотип 3D Freedom" />
-      </picture>
-    </a>
-    <button type="button" class="menu__open">
-      <svg width="32" height="32">
-        <use href="./images/SVG/icons.svg#icon-burger"></use>
-      </svg>
-    </button>
-
-    <div class="dropdown__tel">
-      <svg class="call__icon" width="24" height="24">
-        <use href="./images/SVG/icons.svg#icon-call"></use>
-      </svg>
-      <div class="tel__content">
-        <a href="tel:+380936432288" class="tel__link">+38 (093) 643 22 88</a>
-        <a href="tel:+380503454423" class="tel__link">+38 (050) 345 44 23</a>
-      </div>
-    </div>
-    <select name="lang" id="lang" class="lang__menu">
-      <option value="UKR" class="lang__option">UKR</option>
-      <option value="ENG" selected>ENG</option>
-      <option value="RUS">RUS</option>
-    </select>
-    <div class="header__numbers">
-      <a href="tel:+380936432288" class="header__tel"
-        ><svg width="14" height="14">
-          <use href="./images/SVG/icons.svg#icon-call"></use></svg
-        >+38 (093) 643 22 88</a
-      >
-      <a href="tel:+38050454423" class="header__tel"
-        ><svg width="14" height="14">
-          <use href="./images/SVG/icons.svg#icon-call"></use></svg
-        >+38 (050) 345 44 23</a
-      >
-    </div>
-    <nav class="header__nav">
-      <ul>
-        <li><a href="">Головна</a></li>
-        <li>
-          <div class="dropdown__nav">
-            <button class="dropbtn">Послуги</button>
-            <div class="nav__content">
-              <a href="#">3D Моделювання</a>
-              <a href="#">3D Сканування</a>
-              <a href="#">3D Друк</a>
-            </div>
-          </div>
-        </li>
-        <li><a href="">Замовити</a></li>
-        <li><a href="">Контакти</a></li>
-      </ul>
-    </nav>
-    <div class="menu is-hidden">
-      <div class="menu__container">
-        <div class="menu__header">
-          <a href="" class="header__logo"
-            ><img src="./images/logo-m-x1.png" alt="логотип 3D Freedom"
-          /></a>
-          <button type="button" class="menu__close">
-            <svg width="24" height="24">
-              <use href="./images/SVG/icons.svg#icon-close"></use>
-            </svg>
-          </button>
-          <svg class="call__icon" width="24" height="24">
-            <use href="./images/SVG/icons.svg#icon-call"></use>
-          </svg>
-        </div>
-        <div class="menu__content">
-          <ul class="menu__navigation">
-            <li class="menu__item">
-              <a href="" class="menu__link">ГОЛОВНА</a>
-            </li>
-            <li class="menu__item">
-              <a href="" class="menu__link">ПОСЛУГИ</a>
-            </li>
-            <ul class="menu__sublist">
-              <li class="menu__subitem">
-                <a href="" class="menu__sublink">3D Моделювання</a>
+  <header >
+    <div class="container">
+    <a href="" class="header__logo">
+      <picture>
+        <picture>
+            <source srcset="./images/logo-d-x1.png 1x, 
+            ./images/logo-d-x2.png 2x"
+            media="(min-width: 1440px)">
+            <source srcset="./images/logo-t-x1.png 1x, 
+            ./images/logo-t-x2.png 2x"
+            media="(min-width: 768px)">
+            <source srcset="./images/logo-m-x1.png 1x, 
+            ./images/logo-m-x2.png 2x"
+            media="(max-width: 767px)"> 
+            <img src="./images/logo-m-x1.png" alt="logo" />
+          </picture> </a>
+          <section class="menu-desktop">
+              <ul class="menu-desktop-list list">
+              <li class="menu-desktop-list__item">
+                <a href="./index.html" class="menu-desktop__link link">Головна</a>
               </li>
-              <li class="menu__subitem">
-                <a href="" class="menu__sublink">3D Сканування</a>
+                <li class="menu-desktop-list__item">
+                <a href="#" class="menu-desktop__link  drop-down link">Послуги <img src="./images/SVG/Polygon 1.svg" class="polygon-icon" width=10 height=4></a>
+              <!-- <ul>
+                <li class="menu-desktop-list__item">
+                <a href="./3d-modeling-page.html" class="menu-desktop__link"
+                  >3D Моделювання</a
+                >
+                </li>
+                <li class="menu-desktop-list__item">
+                <a href="./3d-scanning-page.html" class="menu-desktop__link"
+                  >3D Сканування</a
+                >
+               </li>
+                <li class="menu-desktop-list__item">
+                <a href="./3d-printing-page.html" class="menu-desktop__link">3D Друк</a>
+                </li>
+            </ul> -->
+            </li>
+              <li class="menu-desktop-list__item">
+                <a href="./take-order-page.html" class="menu-desktop__link link">Замовити</a>
               </li>
-              <li class="menu__subitem">
-                <a href="" class="menu__sublink">3D Друк</a>
+              <li class="menu-desktop-list__item">
+                <a href="./contacts-page.html" class="menu-desktop__link link">Контакти</a>
               </li>
             </ul>
-            <li class="menu__item">
-              <a href="" class="menu__link">ЗАМОВИТИ</a>
+          </section>
+        <button type="button" class="menu-open">
+        <img src="./images/SVG/icon-burger.svg" class="burger-icon" width=32 height=32>
+      </button>
+        <button type="button" class="header-button__phone">
+          <img src="./images/SVG/icon-call.svg" class="burger-icon" width=24 height=24></button>
+        <button type="button"class="header-button__lang">ENG</button>
+        <section class="header-phone">
+          <a href="" class="s"><img src="./images/SVG/icon-call.svg" class="icon-call" width=14 height=14> +38 (093) 643 22 88 </a>
+          <a href="" class="s"><img src="./images/SVG/icon-call.svg" class="icon-call" width=14 height=14> +38 (050) 345 44 23 </a>
+        </section> 
+        
+ <div class="mob-menu visually-hidden">
+    <div class="container">
+      <nav>
+            <ul class="mob-menu-list list">
+              <ul>
+            <li class="mob-menu-list__item">
+              <a href="./index.html" class="mob-menu__link">ГОЛОВНА</a>
             </li>
-            <li class="menu__item">
-              <a href="" class="menu__link">КОНТАКТИ</a>
+              <li class="mob-menu-list__item">
+              <a href="#" class="mob-menu__link">ПОСЛУГИ</a>
+            </li>
+            <li class="mob-menu-list__item">
+              <a href="./3d-modeling-page.html" class="mob-menu__link"
+                >3D Моделювання</a
+              >
+            </li>
+            <li class="mob-menu-list__item">
+              <a href="./3d-scanning-page.html" class="mob-menu__link"
+                >3D Сканування</a
+              >
+            </li>
+            <li class="mob-menu-list__item">
+              <a href="./3d-printing-page.html" class="mob-menu__link">3D Друк</a>
+            </li>
+            <li class="mob-menu-list__item">
+              <a href="./take-order-page.html" class="mob-menu__link">ЗАМОВИТИ</a>
+            </li>
+            <li class="mob-menu-list__item">
+              <a href="./contacts-page.html" class="mob-menu__link">КОНТАКТИ</a>
             </li>
           </ul>
-        </div>
-      </div>
+        </nav>
+        </div>      
     </div>
-  </div>
-  <script src="./index.js"></script>
+    <script src="./js/menu.js"></script>
 </header>
+  
 </body>
 </html>
