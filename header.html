@@ -1,18 +1,18 @@
+<!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>шапка</title>
-  <link rel="stylesheet" href="./css/header.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>шапка</title>
+    <link rel="stylesheet" href="./css/header.min.css">
 </head>
 <body>
   <header >
     <div class="container">
       <div class="shape-left"></div>
       <div class="shape-right"></div>
-    <a href="" class="header__logo">
-      <picture>
+      <a href="" class="header__logo">
         <picture>
             <source srcset="./images/logo-d-x1.png 1x, 
             ./images/logo-d-x2.png 2x"
@@ -24,14 +24,15 @@
             ./images/logo-m-x2.png 2x"
             media="(max-width: 767px)"> 
             <img src="./images/logo-d-x2.png" alt="logo" />
-          </picture> </a>
-          <section class="menu-desktop">
+          </picture> 
+      </a>
+          <div class="menu-desktop">
               <ul class="menu-desktop-list list">
               <li class="menu-desktop-list__item">
                 <a href="./index.html" class="menu-desktop__link link">Головна</a>
               </li>
                 <li class="menu-desktop-list__item">
-                <a href="#" class="menu-desktop__link  drop-down link">Послуги <img src="./images/SVG/Polygon 1.svg" class="polygon-icon" width=10 height=4></a>
+                <a href="#" class="menu-desktop__link  drop-down link">Послуги <img src="./images/SVG/Polygon1.svg" alt="triangle" class="polygon-icon" width=10 height=4></a>
               <!-- <ul>
                 <li class="menu-desktop-list__item">
                 <a href="./3d-modeling-page.html" class="menu-desktop__link"
@@ -42,7 +43,7 @@
                 <a href="./3d-scanning-page.html" class="menu-desktop__link"
                   >3D Сканування</a
                 >
-               </li>
+                </li>
                 <li class="menu-desktop-list__item">
                 <a href="./3d-printing-page.html" class="menu-desktop__link">3D Друк</a>
                 </li>
@@ -55,12 +56,12 @@
                 <a href="./contacts-page.html" class="menu-desktop__link link">Контакти</a>
               </li>
             </ul>
-          </section>
+          </div>
         <button type="button" class="menu-open">
-        <img src="./images/SVG/icon-burger.svg" class="burger-icon" width=32 height=32>
+        <img src="./images/SVG/icon-burger.svg" alt="three lines" class="burger-icon" width=32 height=32>
       </button>
         <button type="button" class="header-button__phone">
-          <img src="./images/SVG/icon-call.svg" class="burger-icon" width=24 height=24></button>
+          <img src="./images/SVG/icon-call.svg"  class="burger-icon" width=24 height=24></button>
         <button type="button"class="header-button__lang">ENG</button>
         <section class="header-phone">
           <a href="" class="s"><img src="./images/SVG/icon-call.svg" class="icon-call" width=14 height=14> +38 (093) 643 22 88 </a>
@@ -71,7 +72,6 @@
     <div class="container">
       <nav>
             <ul class="mob-menu-list list">
-              <ul>
             <li class="mob-menu-list__item">
               <a href="./index.html" class="mob-menu__link">ГОЛОВНА</a>
             </li>
@@ -103,6 +103,5 @@
     </div>
     <script src="./js/menu.js"></script>
 </header>
-  
 </body>
 </html>
