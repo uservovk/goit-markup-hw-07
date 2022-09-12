@@ -567,4 +567,31 @@ header > .container {
 
 .menu-close {
   border: none;
+}
+
+.shape-left {
+  width: 73.65px;
+  height: 73.65px;
+  -webkit-box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+          box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 35px 0px 0px 35px;
+  position: absolute;
+  rotate: 180deg;
+  left: 0px;
+  top: 0px;
+  background-color: var(--bcg-color-one);
+  z-index: -1;
+}
+
+.shape-right {
+  width: 73.65px;
+  height: 73.65px;
+  position: absolute;
+  -webkit-box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+          box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  background-color: var(--bcg-color-one);
+  z-index: -1;
+  border-radius: 35px 0px 0px 35px;
+  right: 0px;
+  top: 0px;
 }/*# sourceMappingURL=header.css.map */
