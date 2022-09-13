@@ -576,7 +576,7 @@ header > .container {
   font-size: 24px;
   line-height: 30px;
   text-align: center;
-  color: #487996;
+  color: var(--secondary-color);
 }
 
 .menu-close {
