@@ -20,3 +20,13 @@ const weight = typeof 156;
 console.log(weight);
 const isClosed = typeof false;
 console.log(isClosed);
+
+// alert('dnvfjnv')
+// console.log('Say:', message)
+
+// const shouldRenew = confirm('Would like to renew subscription?');
+// console.log(shouldRenew);
+
+const quantity = prompt('Write the number of pessengers');
+console.log(quantity);
+console.log(typeof quantity);
