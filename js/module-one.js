@@ -27,6 +27,19 @@ console.log(isClosed);
 // const shouldRenew = confirm('Would like to renew subscription?');
 // console.log(shouldRenew);
 
-const quantity = prompt('Write the number of pessengers');
-console.log(quantity);
-console.log(typeof quantity);
+// let quantity = prompt('Write the number of pessengers');
+// quantity = Number(quantity);
+// console.log(quantity);
+// console.log(typeof quantity);
+
+let elementWidth = "50px";
+const result = Number.parseInt(elementWidth);
+console.log(typeof result);
+
+let elementHeight = '200.11px';
+elementHeight = Number.parseFloat(elementHeight); 
+console.log(elementHeight);
+
+let salary = 1200.65748;
+salary = salary.toFixed(2);
+console.log(salary);
