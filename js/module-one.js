@@ -66,6 +66,13 @@
 // console.log(result);
 // const message = 'Q: how many symbols in this stroke?';
 // console.log(message.length);
-const firstName = 'Alex';
-const lastName = 'Vovk';
-console.log(firstName + ' ' + lastName);
+// const firstName = 'Alex';
+// const lastName = 'Vovk';
+// console.log(firstName + ' ' + lastName);
+function add(a,b,c) {
+console.log(`Addition result equals ${a+b+c}`);
+}
+
+add(15, 27, 10);
+add(10, 20, 30);
+add(5, 10, 15);
