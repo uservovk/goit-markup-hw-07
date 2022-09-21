@@ -69,10 +69,27 @@
 // const firstName = 'Alex';
 // const lastName = 'Vovk';
 // console.log(firstName + ' ' + lastName);
-function add(a,b,c) {
-console.log(`Addition result equals ${a+b+c}`);
-}
+// function add(a,b,c) {
+// console.log(`Addition result equals ${a+b+c}`);
+// }
 
-add(15, 27, 10);
-add(10, 20, 30);
-add(5, 10, 15);
+// add(15, 27, 10);
+// add(10, 20, 30);
+// add(5, 10, 15);
+// const brand = 'Samsung';
+// const normalizedBrand = brand.toLowerCase(brand);
+// console.log(normalizedBrand);
+// const brand = 'SamSung';
+// const normalizedBrand = brand[0] + brand.slice(1).toLowerCase();
+// console.log(normalizedBrand);
+
+const blockWord1 = 'spam';
+const blockWord2 = 'sale';
+const message = 'Do you want to go to Canada? It is not a spam.';
+const message2 = 'Black Friday! BIG SALE!!!';
+
+console.log(message.includes(blockWord1));
+console.log(message2.includes(blockWord1));
+console.log(message2.includes(blockWord2));
+const normalizedMessage = message2.toLowerCase();
+console.log(normalizedMessage.includes(blockWord2));
