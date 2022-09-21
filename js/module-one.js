@@ -83,13 +83,18 @@
 // const normalizedBrand = brand[0] + brand.slice(1).toLowerCase();
 // console.log(normalizedBrand);
 
-const blockWord1 = 'spam';
-const blockWord2 = 'sale';
-const message = 'Do you want to go to Canada? It is not a spam.';
-const message2 = 'Black Friday! BIG SALE!!!';
+// const blockWord1 = 'spam';
+// const blockWord2 = 'sale';
+// const message = 'Do you want to go to Canada? It is not a spam.';
+// const message2 = 'Black Friday! BIG SALE!!!';
 
-console.log(message.includes(blockWord1));
-console.log(message2.includes(blockWord1));
-console.log(message2.includes(blockWord2));
-const normalizedMessage = message2.toLowerCase();
-console.log(normalizedMessage.includes(blockWord2));
+// console.log(message.includes(blockWord1));
+// console.log(message2.includes(blockWord1));
+// console.log(message2.includes(blockWord2));
+// const normalizedMessage = message2.toLowerCase();
+// console.log(normalizedMessage.includes(blockWord2));
+// console.log(3 && 'NaN' && 34 && 'false' && 'hello' && 'finished');
+// const brand = 'samsung';
+// const normalizedBrand = brand[0].toUpperCase()+brand.slice(1);
+// console.log(normalizedBrand);
+
