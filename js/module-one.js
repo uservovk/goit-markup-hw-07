@@ -97,4 +97,18 @@
 // const brand = 'samsung';
 // const normalizedBrand = brand[0].toUpperCase()+brand.slice(1);
 // console.log(normalizedBrand);
-
+// const x1 = 10;
+// const x2 = 30;
+// const number = 50;
+// console.log(`The number ${number} is under
+//     number ${x1}?`, number < x1);
+// console.log(x1 < number && number < x2);
+// console.log(number < x1 || number > x2);
+// const isOnline = true;
+// const isFriend = true;
+// const isDnd = false;
+// const canOpenChat = isOnline && isFriend && !isDnd;
+// console.log('Can open chat?', canOpenChat);
+const sub = 'pro';
+const canAccessSite = sub === 'pro' || sub === 'vip';
+console.log('Can access the site?', canAccessSite);
