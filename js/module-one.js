@@ -113,28 +113,46 @@
 // const canAccessSite = sub === 'pro' || sub === 'vip';
 // console.log('Can access the site?', canAccessSite);
 
-function makeMessage (name, price) {
-    const message =`You picked ${name}, price per item is ${price} credits`;
+// function makeMessage (name, price) {
+//     const message =`You picked ${name}, price per item is ${price} credits`;
+//     return message;
+// };
+// function calculateTotalPrice (orderedQuantity, pricePerItem) {
+//     const totalPrice = orderedQuantity*pricePerItem;
+//     return totalPrice;
+// };
+// function makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee) {
+//     const message=`You ordered droids worth ${orderedQuantity*pricePerDroid+deliveryFee} credits. Delivery (${deliveryFee} credits) is included in total price.`
+//     return message;
+// }
+// function isAdult(age) {
+//     const passed = age>=18;
+//     return passed;
+// }
+// function isValidPassword(password) {
+//     const SAVED_PASSWORD = 'jqueryismyjam';
+//     const isMatch = password===SAVED_PASSWORD;
+//     return isMatch;
+// }
+// function isAdult(age) {
+//     const canDrinkIf = age>=21;
+//     return canDrinkIf;
+// }
+function checkAge(age) {
+    let message;
+    if (age >=18) { 
+    message = 'You are an adult';
+    } else {
+    message = 'You are a minor';
+    }
     return message;
-};
-function calculateTotalPrice (orderedQuantity, pricePerItem) {
-    const totalPrice = orderedQuantity*pricePerItem;
-    return totalPrice;
-};
-function makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee) {
-    const message=`You ordered droids worth ${orderedQuantity*pricePerDroid+deliveryFee} credits. Delivery (${deliveryFee} credits) is included in total price.`
+}
+function checkDegree(degree) {
+    let message;
+    if (degree === 'pedagogical') {
+        message = 'You are acceptable for teaching position';
+    } else {
+        message = 'You are not acceptable for trraching position';
+    }
     return message;
-}
-function isAdult(age) {
-    const passed = age>=18;
-    return passed;
-}
-function isValidPassword(password) {
-    const SAVED_PASSWORD = 'jqueryismyjam';
-    const isMatch = password===SAVED_PASSWORD;
-    return isMatch;
-}
-function isAdult(age) {
-    const canDrinkIf = age>=21;
-    return canDrinkIf;
 }
