@@ -165,3 +165,99 @@ if(ordered>available){
 }
   return message;
 }
+
+function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
+  let message;
+  totalPrice=pricePerDroid*orderedQuantity;
+if (customerCredits<totalPrice) {
+  message='Insufficient funds!';
+} else {
+  creditsLeft=customerCredits-totalPrice;
+  message=`You ordered ${orderedQuantity} droids, you have ${creditsLeft} credits left`
+}
+  return message;
+}
+
+function checkPassword(password) {
+  const ADMIN_PASSWORD = 'jqueryismyjam';
+  let message;
+  if (password===null) {
+    message =  'Canceled by user!';
+  } else if (password==='jqueryismyjam') {
+    message = 'Welcome!';
+  } else {
+    message = 'Access denied, wrong password!';
+  }
+  return message;
+}
+
+function checkStorage(available, ordered) {
+  let message;
+  if(ordered===0) {
+    message='There are no products in the order!';
+  } else if(ordered>available){
+    message='Your order is too large, there are not enough items in stock!';
+  } else{
+    message='The order is accepted, our manager will contact you';
+  }
+  return message;
+}
+
+function isNumberInRange(start, end, number) {
+  const isInRange = number>=start&&number<=end;
+
+  return isInRange;
+}
+
+function checkIfCanAccessContent(subType) {
+  const canAccessContent = subType==='pro'||subType==='vip';
+
+  return canAccessContent;
+}
+
+function isNumberNotInRange(start, end, number) {
+  const isInRange = number >= start && number <= end;
+  const isNotInRange = !isInRange;
+
+  return isNotInRange;
+}
+
+function getDiscount(totalSpent) {
+  const BASE_DISCOUNT = 0;
+  const BRONZE_DISCOUNT = 0.02;
+  const SILVER_DISCOUNT = 0.05;
+  const GOLD_DISCOUNT = 0.1;
+  let discount;
+if(totalSpent>=50000){
+  discount=GOLD_DISCOUNT;
+} else if(totalSpent>=20000&&totalSpent<50000){
+  discount=SILVER_DISCOUNT;
+} else if(totalSpent>=5000&&totalSpent<20000){
+  discount=BRONZE_DISCOUNT;
+} else{
+  discount=BASE_DISCOUNT;
+}
+  return discount;
+}
+
+function checkStorage(available, ordered) {
+  let message;
+  message=ordered>available?'Not enough goods in stock!':'The order is accepted, our manager will contact you';
+  return message;
+}
+
+function checkPassword(password) {
+  const ADMIN_PASSWORD = "jqueryismyjam";
+  let message;
+message=password===ADMIN_PASSWORD?'Access is allowed':'Access denied, wrong password!';
+  return message;
+}
+
+
+
+
+
+
+
+
+
