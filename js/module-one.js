@@ -313,3 +313,47 @@ switch(country){
 }
   return message;
 }
+
+function getNameLength(name) {
+  const message = `Name ${name} is ${name.length} characters long`;
+  return message;
+}
+
+const courseTopic = "JavaScript essentials";
+const courseTopicLength = courseTopic.length;
+const firstElement = courseTopic[0];
+const lastElement = courseTopic[courseTopic.length - 1];
+
+
+function getSubstring(string, length) {
+  const substring = string.slice(0, length) ;
+  return substring;
+}
+
+function formatMessage(message, maxLength) {
+  let result;
+if(message.length<=maxLength){
+  result=message;
+} else{
+  result=message.slice(0, maxLength)+'...';
+}
+  return result;
+}
+
+function normalizeInput(input) {
+  const normalizedInput = input.toLowerCase();
+  return normalizedInput;
+}
+
+function checkForName(fullName, name) {
+  const result = fullName.includes(name);
+  return result;
+}
+
+
+function checkForSpam(message) {
+  let result;
+  const normalizedMessage=message.toLowerCase();
+  result=normalizedMessage.includes('sale')||normalizedMessage.includes('spam');
+  return result;
+}
