@@ -140,7 +140,7 @@
 // }
 // function checkAge(age) {
 //     let message;
-//     if (age >=18) { 
+//     if (age >=18) {
 //     message = 'You are an adult';
 //     } else {
 //     message = 'You are a minor';
@@ -257,16 +257,16 @@
 //   let price;
 
 //  switch (type) {
-//     case 'starter': 
-//       price = 0; 
+//     case 'starter':
+//       price = 0;
 //       break;
 
-//     case 'professional': 
-//       price = 20; 
+//     case 'professional':
+//       price = 20;
 //       break;
 
 //    case 'organization':
-//       price = 50; 
+//       price = 50;
 //       break;
 //   }
 //   return price;
@@ -283,77 +283,153 @@
 //     message = "Welcome!";
 //     break;
 //   default:
-//     message = "Access denied, wrong password!"; 
+//     message = "Access denied, wrong password!";
 //   }
 //   return message;
 // }
 
-function getShippingCost(country) {
-  let message;
+// function getShippingCost(country) {
+//   let message;
 
-switch(country){
-  case 'China':
-    price=100;
-    message=`Shipping to ${country} will cost ${price} credits`;
-    break;
-  case 'Chile':
-    price=250;
-    message=`Shipping to ${country} will cost ${price} credits`;
-    break;
-  case 'Australia':
-    price=170;
-    message=`Shipping to ${country} will cost ${price} credits`;
-    break;
-  case 'Jamaica':
-    price=120;
-    message=`Shipping to ${country} will cost ${price} credits`;
-    break;
-  default:
-    message='Sorry, there is no delivery to your country';
-}
-  return message;
-}
+// switch(country){
+//   case 'China':
+//     price=100;
+//     message=`Shipping to ${country} will cost ${price} credits`;
+//     break;
+//   case 'Chile':
+//     price=250;
+//     message=`Shipping to ${country} will cost ${price} credits`;
+//     break;
+//   case 'Australia':
+//     price=170;
+//     message=`Shipping to ${country} will cost ${price} credits`;
+//     break;
+//   case 'Jamaica':
+//     price=120;
+//     message=`Shipping to ${country} will cost ${price} credits`;
+//     break;
+//   default:
+//     message='Sorry, there is no delivery to your country';
+// }
+//   return message;
+// }
 
-function getNameLength(name) {
-  const message = `Name ${name} is ${name.length} characters long`;
-  return message;
-}
+// function getNameLength(name) {
+//   const message = `Name ${name} is ${name.length} characters long`;
+//   return message;
+// }
 
-const courseTopic = "JavaScript essentials";
-const courseTopicLength = courseTopic.length;
-const firstElement = courseTopic[0];
-const lastElement = courseTopic[courseTopic.length - 1];
-
-
-function getSubstring(string, length) {
-  const substring = string.slice(0, length) ;
-  return substring;
-}
-
-function formatMessage(message, maxLength) {
-  let result;
-if(message.length<=maxLength){
-  result=message;
-} else{
-  result=message.slice(0, maxLength)+'...';
-}
-  return result;
-}
-
-function normalizeInput(input) {
-  const normalizedInput = input.toLowerCase();
-  return normalizedInput;
-}
-
-function checkForName(fullName, name) {
-  const result = fullName.includes(name);
-  return result;
-}
+// const courseTopic = "JavaScript essentials";
+// const courseTopicLength = courseTopic.length;
+// const firstElement = courseTopic[0];
+// const lastElement = courseTopic[courseTopic.length - 1];
 
 
-function checkForSpam(message) {
-  let result;
-  const normalizedMessage=message.toLowerCase();
-  result=normalizedMessage.includes('sale')||normalizedMessage.includes('spam');
-  return result;
-}
+// function getSubstring(string, length) {
+//   const substring = string.slice(0, length) ;
+//   return substring;
+// }
+
+// function formatMessage(message, maxLength) {
+//   let result;
+// if(message.length<=maxLength){
+//   result=message;
+// } else{
+//   result=message.slice(0, maxLength)+'...';
+// }
+//   return result;
+// }
+
+// function normalizeInput(input) {
+//   const normalizedInput = input.toLowerCase();
+//   return normalizedInput;
+// }
+
+// function checkForName(fullName, name) {
+//   const result = fullName.includes(name);
+//   return result;
+// }
+
+
+// function checkForSpam(message) {
+//   let result;
+//   const normalizedMessage=message.toLowerCase();
+//   result=normalizedMessage.includes('sale')||normalizedMessage.includes('spam');
+//   return result;
+// }
+
+
+//   const option=323;
+//   let message;
+//   switch (option) {
+//     case 1:
+//       message = 'You can pick up your perchase from 12 o`clock tomorrow at our office';
+//       break;
+//     case 2:
+//       message = 'Courier will deliver your purchase between 9 a.m. and 6 p.m. tomorrow';
+//       break;
+//     case 3:
+//       message = 'Parcel will be send today';
+//       break;
+//     default:
+//       message = 'Our manager will call you back';
+// }
+// console.log(message);
+  
+
+// function checkAge(age) {
+//   if (age>=18) {
+//     return "You are an adult";
+//   }
+//   return "You are a minor";
+// }
+
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = "jqueryismyjam";
+//   if (password === ADMIN_PASSWORD) {
+//     return "Welcome!";
+//   }
+//   return "Access denied, wrong password!";
+// }
+
+// for (let i = 0; i < 5; i += 1){
+//   console.log(i);
+// }
+// console.log('abc');
+// for (let i = 12; i < 100; i += 10){
+//   console.log(i);
+// }
+// console.log('finished');
+
+
+// const minSalary = 500;
+// const maxSalary = 5000;
+// const employees = 4;
+// let totalSalary = 0;
+// for (let i = 1; i < employees; i += 1){
+//   const salary = Math.round(Math.random() * (maxSalary - minSalary) + minSalary);
+//   console.log(`Salary of employee number ${i} - ${salary}`);
+//   totalSalary += salary;
+// }
+// console.log('Total salary:', totalSalary);
+
+// const min = 6;
+// const max = 13;
+// let total = 0;
+// for (let i = min; i <= max; i += 1){
+//   console.log(i);
+//   if (i % 2 === 0) {
+//     console.log('Even:', i);
+//   }
+//   total += i;
+// }
+// console.log('Total:', total);
+
+// function checkStorage(available, ordered) {
+//   if (ordered === 0) {
+//     return "Your order is empty!";
+//   } if (ordered > available) {
+//     return "Your order is too large, not enough goods in stock!";
+//   } 
+//     return "The order is accepted, our manager will contact you";
+// }
